@@ -15,7 +15,7 @@
 .banner {
     width: 100%;
     height: 100vh;
-    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(bg.png);
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(neon.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -80,7 +80,6 @@
 }
 
 .content {
-    text-transform: uppercase;
     width: 100%;
     position: absolute;
     top: 50%;
@@ -116,4 +115,9 @@ button:hover {
     color: #000;
     transition: all 0.4s ease;
     background: #fff;
+}
+
+.hey {
+    color: #04d9ff;
+    background-color: transparent;
 }
