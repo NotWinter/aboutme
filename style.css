@@ -9,21 +9,13 @@
 
 ::selection {
     background: none;
-    color: #d86637;
+    color: none;
 }
 
 .banner {
     width: 100%;
     height: 100vh;
-    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(neon.jpg);
-    background-size: cover;
-    background-position: center;
-}
-
-.banner1 {
-    width: 100%;
-    height: 100vh;
-    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(1.png);
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(wq.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -32,8 +24,8 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 97%;
-    padding: 30px 30px;
+    width: 100%;
+    padding: 20px 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -52,6 +44,14 @@
     text-transform: uppercase;
     letter-spacing: 2px;
     cursor: pointer;
+}
+
+h5 {
+    color: #999;
+    position: absolute;
+    bottom: 5;
+    right: 13;
+    font-size: 8;
 }
 
 .header ul {
@@ -92,8 +92,8 @@
     font-size: 70px;
     margin-top: 40px;
     transition: all 0.9s ease;
-    animation: headerAnim;
-    animation-duration: 5s;
+    animation: fadein;
+    animation-duration: 3s;
 }
 
 button {
@@ -118,6 +118,16 @@ button:hover {
 }
 
 .hey {
-    color: #04d9ff;
+    color: #60C894;
     background-color: transparent;
+}
+
+.mid {
+    animation: fadein;
+    animation-duration: 3s;
+}
+
+@keyframes fadein {
+    0% {opacity: 0%;}
+    100% {opacity: 100%;}
 }
